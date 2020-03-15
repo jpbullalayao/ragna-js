@@ -27,10 +27,10 @@ class Stack extends LinkedList {
   }
 
   peek() {
-    if (!this.tail) {
-      return null;
+    if (!this.head) {
+      return this.head;
     }
     
-    return this.tail.value;
+    return this.head.value;
   }
 }
