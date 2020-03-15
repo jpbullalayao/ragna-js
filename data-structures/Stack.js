@@ -1,41 +1,36 @@
 import Node from './Node';
+import LinkedList from './LinkedList';
 
-class Stack {
-  constructor() {
-    this.head = null;
-    this.tail = null;
-  }
-
+class Stack extends LinkedList {
   push(value) {
     const node = new Node(value);
+
     if (!this.head) {
       this.head = node;
       this.tail = node;
+    } else {
+      node.next = this.head;
+      this.head = node;
     }
-
-    node.next = this.head;
-    this.head = node;
-
+ 
     return node;
   }
 
   pop() {
-   if (!this.head) {
-     return null;
-   }
+    if (!this.head) {
+      return this.head;
+    }
 
-   const node = this.head;
-   this.head = this.head.next;
-   return node;
+    const node = this.head;
+    this.head = this.head.next;
+    return node;
   }
 
   peek() {
-    if (!this.head) {
+    if (!this.tail) {
       return null;
     }
     
-    return this.head.value;
+    return this.tail.value;
   }
 }
-
-export default Stack;
