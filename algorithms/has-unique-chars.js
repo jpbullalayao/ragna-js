@@ -4,6 +4,7 @@
  * string are unique (i.e. no duplicate characters).
  * 
  * @param {string} s
+ * @return {boolean}
  */
 const hasUniqueChars = (s) => {
   if (!s || s.length === 0) {

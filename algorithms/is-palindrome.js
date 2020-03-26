@@ -3,6 +3,7 @@
  * Takes in a string 's' and determines if it is a palindrome.
  *
  * @param {string} s
+ * @return {boolean}
  */
 const isPalindrome = (s) => {
   for (let i = 0; i < Math.floor(s.length / 2); i++) {

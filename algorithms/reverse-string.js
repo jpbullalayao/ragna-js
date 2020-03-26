@@ -3,6 +3,7 @@
  * Given a string s, this returns a reversed version of s
  *
  * @param {string} s
+ * @return {string}
  */
 const reverseString = (s) => {
   let firstHalf = '';
