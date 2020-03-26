@@ -6,7 +6,7 @@
  * @param {Node} head
  * @return {Node}
  */
-const middleNode = (head) => {
+export const middleNode = (head) => {
   const dict = {};
   
   let node = head;

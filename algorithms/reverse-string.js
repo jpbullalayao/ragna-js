@@ -5,7 +5,7 @@
  * @param {string} s
  * @return {string}
  */
-const reverseString = (s) => {
+export const reverseString = (s) => {
   let firstHalf = '';
   let secondHalf = '';
 

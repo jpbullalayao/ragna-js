@@ -6,7 +6,7 @@
  * @param {string} s
  * @return {boolean}
  */
-const hasUniqueChars = (s) => {
+export const hasUniqueChars = (s) => {
   if (!s || s.length === 0) {
     return false;
   }

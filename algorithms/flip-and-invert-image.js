@@ -5,7 +5,7 @@
  * @param {number[][]} A
  * @return {number[][]}
  */
-const flipAndInvertImage = (A) => {
+export const flipAndInvertImage = (A) => {
   for (let i = 0; i < A.length; i++) {
     let item = A[i];
     
