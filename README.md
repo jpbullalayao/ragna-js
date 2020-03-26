@@ -1,2 +1,2 @@
 # ragna-js
-Ragna's uncategorized JavaScript code
+Ragna's data structures and algorithms, written in JavaScript (ES6)
